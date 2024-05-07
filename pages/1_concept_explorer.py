@@ -1,10 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import gravis as gv
 
-from src.loading.load_prepared import load_full_graph
-from src.subgraph.calculate import calculate_subgraph
-from src.rendering.renderhtml import render_html_container
 
 st.sidebar.title('Choose a subgraph')
 option=st.sidebar.selectbox('Select Subgraph',('nationalstrassennetz',

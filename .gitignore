@@ -1,0 +1,30 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!*.R
+!*.Rmd
+!template.latex
+!*.py
+!*.ipynb
+!*.md
+!*.sh
+!literature/*/*.pdf
+!requirements.txt
+# etc...
+
+# ...even if they are in subdirectories
+!*/
+astraparser/**/*try*
+astraparser/**/*checkpoint*
+notebooks/**/* 
+venv*
+env*
+build*
+legacy*
+
+!src/**/*
+!pages/**/*
+!data/html/full_graph_grv.html
+!data/html/sample_html.html

@@ -25,3 +25,5 @@ env*
 build*
 legacy*
 **/__pycache__
+data/01_raw/legal_lookup.pkl
+data/01_raw/raw_concepts.csv

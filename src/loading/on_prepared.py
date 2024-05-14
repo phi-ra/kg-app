@@ -3,7 +3,7 @@ import networkx as nx
 import gravis as gv
 import pandas as pd
 
-def _create_complete_subgraph(raw_nodes_path='data/01_raw/raw_concepts.csv',
+def _create_complete_subgraph(raw_nodes_path='data/01_raw/concepts_lfile.zip',
                               all_nodes_path='data/01_raw/all_nodes.pkl', 
                               lowercase=True, 
                               write_results=True):

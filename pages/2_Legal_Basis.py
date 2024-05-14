@@ -44,7 +44,7 @@ for i, button in enumerate(buttons):
         full_legal_list = []
         for node_ in list(new_subgraph.nodes):
             if type_dict[node_] == 'legal':
-                res = legal_dist[name_dict[node_]]['titel']
+                res = legal_dist[name_dict[node_]]
                 full_legal_list.append(res)
 
 

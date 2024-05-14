@@ -16,7 +16,7 @@ def load_namelist(data_path='data/01_raw/all_nodes.pkl'):
     return name_list
 
 @st.cache_data
-def load_legaldict(data_path='data/01_raw/legal_lookup.pkl'):
+def load_legaldict(data_path='data/01_raw/legal_namedict.pkl'):
     with open(data_path, 'rb') as con:
         legal_list = pickle.load(con)
 

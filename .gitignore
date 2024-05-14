@@ -12,19 +12,16 @@
 !*.sh
 !literature/*/*.pdf
 !requirements.txt
-# etc...
+!src/**/*
+!pages/**/*
+!data/01_raw/**/*
+!data/02_processed/.gitkeep
 
 # ...even if they are in subdirectories
 !*/
-astraparser/**/*try*
-astraparser/**/*checkpoint*
 notebooks/**/* 
 venv*
 env*
 build*
 legacy*
-
-!src/**/*
-!pages/**/*
-!data/html/full_graph_grv.html
-!data/html/sample_html.html
+**/__pycache__

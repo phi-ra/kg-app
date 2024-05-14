@@ -1,1 +1,4 @@
+gravis==0.1.0
+networkx==3.3
+pandas==2.2.2
 streamlit==1.34.0

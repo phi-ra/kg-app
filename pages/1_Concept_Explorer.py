@@ -24,8 +24,8 @@ net = Network(
 )
 
 net.from_nx(new_subgraph)
-net.force_atlas_2based(central_gravity=0.015,
-                       gravity=-31)
+net.force_atlas_2based(central_gravity=0.02,
+                       gravity=-20)
 net.show_buttons(filter_=["physics"])
 
 net.show('data/html/new_subgraph.html',

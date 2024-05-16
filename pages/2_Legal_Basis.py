@@ -6,6 +6,7 @@ from src.subgraph.calculate import calculate_subgraph
 
 search_keyword = st.text_input("Suchwort",
                                 "unfalldaten")
+st.write('Konzepte im Graph:')
 
 name_list = load_namelist()
 legal_dist = load_legaldict()
@@ -18,6 +19,7 @@ closest_matches = difflib.get_close_matches(search_keyword,
 
 buttons = []
 col1, col2 = st.columns(2)
+any_button = False
 
 for id_, but_ in enumerate(closest_matches):
     if id_ % 2 == 0:
@@ -29,6 +31,7 @@ for id_, but_ in enumerate(closest_matches):
 
 for i, button in enumerate(buttons):
     if button:
+        any_button = True
         full_graph = load_full_graph()
         new_subgraph = calculate_subgraph(full_graph,
                                           closest_matches[i], 
@@ -48,6 +51,8 @@ for i, button in enumerate(buttons):
                 full_legal_list.append(res)
 
 
-
-st.write('Das Konzept enthält die folgenden gesetzlichen Abhängigkeiten ')
-st.write(list(set(full_legal_list)))
+if any_button:
+    st.write('Das Konzept enthält die folgenden gesetzlichen Abhängigkeiten ')
+    st.write(list(set(full_legal_list)))
+else:
+    st.write('Wähle ein Konzept')

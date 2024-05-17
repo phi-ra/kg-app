@@ -1,12 +1,13 @@
 import networkx as nx
 
-def calculate_subgraph(graph, node, radius=2):
+def calculate_subgraph(graph, node, radius=2, **kwargs):
     try:
         new_graph = graph.copy()
 
         new_graph = nx.generators.ego_graph(new_graph,
                                             node,
-                                            radius=radius)
+                                            radius=radius, 
+                                            **kwargs)
     except nx.NodeNotFound:
         print('issues\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
         print(node)

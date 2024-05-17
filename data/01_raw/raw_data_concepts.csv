@@ -1,0 +1,58 @@
+node_1,node_2,edge,doc_type
+RoadTrafficAccidentCatalogs,RoadType,hat Klasse,data_dict
+RoadType,Autobahn,hat Wert,data_dict
+RoadType,Autostrasse,hat Wert,data_dict
+RoadType,Hauptstrasse,hat Wert,data_dict
+RoadType,Nebenstrasse,hat Wert,data_dict
+RoadType,Autobahnnebenanlage,hat Wert,data_dict
+RoadType,Andere,hat Wert,data_dict
+RoadTrafficAccidentCatalogs,AccidentType,hat Klasse,data_dict
+AccidentType,Schleuder- oder Selbstunfall,hat Wert,data_dict
+AccidentType,Überholunfall oder Fahrstreifenwechsel,hat Wert,data_dict
+AccidentType,Auffahrunfall,hat Wert,data_dict
+AccidentType,Abbiegeunfall,hat Wert,data_dict
+AccidentType,Einbiegeunfall,hat Wert,data_dict
+AccidentType,Überqueren der Fahrbahn,hat Wert,data_dict
+AccidentType,Frontalkollision,hat Wert,data_dict
+AccidentType,Parkierunfall,hat Wert,data_dict
+AccidentType,Fussgängerunfall,hat Wert,data_dict
+AccidentType,Tierunfall,hat Wert,data_dict
+AccidentType,Andere,hat Wert,data_dict
+RoadTrafficAccidentCatalogs,AccidentSeverityCategory,hat Klasse,data_dict
+AccidentSeverityCategory,Unfall mit Getöteten,hat Wert,data_dict
+AccidentSeverityCategory,Unfall mit Schwerverletzten,hat Wert,data_dict
+AccidentSeverityCategory,Unfall mit Leichtverletzten,hat Wert,data_dict
+AccidentSeverityCategory,Unfall mit Sachschaden,hat Wert,data_dict
+RoadTrafficAccidentCatalogs,AccidentWeekDay,hat Klasse,data_dict
+AccidentWeekDay,Montag,hat Wert,data_dict
+AccidentWeekDay,Dienstag,hat Wert,data_dict
+AccidentWeekDay,Mittwoch,hat Wert,data_dict
+AccidentWeekDay,Donnerstag,hat Wert,data_dict
+AccidentWeekDay,Freitag,hat Wert,data_dict
+AccidentWeekDay,Samstag,hat Wert,data_dict
+AccidentWeekDay,Sonntag,hat Wert,data_dict
+hpm_catalogues,hpm_type,hat Klasse,data_dict
+hpm_catalogues,surface,hat Klasse,data_dict
+hpm_catalogues,obliging_authorities,hat Klasse,data_dict
+hpm_catalogues,state,hat Klasse,data_dict
+hpm_catalogues,public_transport_section,hat Klasse,data_dict
+hpm_catalogues,quality_of_way,hat Klasse,data_dict
+hpm_catalogues,obliging_land_owner,hat Klasse,data_dict
+hpm_catalogues,hiking_segment_type,hat Klasse,data_dict
+hpm_catalogues,route_type,hat Klasse,data_dict
+hpm_catalogues,route_category,hat Klasse,data_dict
+hpm_catalogues,hpm_route_type,hat Klasse,data_dict
+hpm_catalogues,direction_of_signalisation,hat Klasse,data_dict
+hpm_catalogues,location_category,hat Klasse,data_dict
+hpm_catalogues,mtb_segment_type,hat Klasse,data_dict
+AxisCatalog,RoadOwner,hat Klasse,data_dict
+AxisCatalog,Database,hat Klasse,data_dict
+AxisCatalog,PlateType,hat Klasse,data_dict
+AxisCatalog,AxisStatus,hat Klasse,data_dict
+AxisCatalog,AxisType,hat Klasse,data_dict
+AxisCatalog,MarkerType,hat Klasse,data_dict
+AxisCatalog,PlateFixationType,hat Klasse,data_dict
+AxisCatalog,PlateLocationType,hat Klasse,data_dict
+AxisCatalog,PlateLabelType,hat Klasse,data_dict
+AxisCatalog,SectorMaterializationType,hat Klasse,data_dict
+AxisCatalog,CaptureMethod,hat Klasse,data_dict

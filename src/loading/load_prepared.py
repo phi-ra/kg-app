@@ -37,7 +37,7 @@ def load_data_nodes(data_path='data/01_raw/data_concepts_lower.pkl'):
     return data_nodes
 
 
-def load_full_data_graph(data_path='data/02_processed/full_data_graph.pkl'):
+def load_full_data_graph(data_path='data/01_raw/full_data_graph.pkl'):
     with open(data_path, 'rb') as con:
         full_graph = pickle.load(con)
     

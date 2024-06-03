@@ -43,3 +43,9 @@ def load_full_data_graph(data_path='data/01_raw/full_data_graph.pkl'):
     
     return full_graph
 
+@st.cache_data
+def load_legal_lookup(data_path='data/01_raw/processed_legal_titles.pkl'):
+    with open(data_path, 'rb') as con:
+        legal_lookups = pickle.load(con)
+
+    return legal_lookups

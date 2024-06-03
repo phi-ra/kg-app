@@ -42,10 +42,19 @@ for i, button in enumerate(buttons):
         
         type_dict = {}
         name_dict = {}
+        print_list = []
+
         for item in nodes_enriched:
-            item_key = list(item.keys())[0].lower().strip()
+            key_full = list(item.keys())[0]
+            item_key = key_full.lower().strip()
             type_dict[item_key] = item[next(iter(item))]['doc_type']
             name_dict[item_key] = item[next(iter(item))]['doc_key']
+
+            if item_key == closest_matches[i]:
+                if item[key_full]['doc_type'] == 'legal':
+                    print_list.append(item[key_full]['original_text'])
+
+        print_list = set(print_list)
 
         full_legal_list = []
         for node_ in list(new_subgraph.nodes):
@@ -64,6 +73,10 @@ if any_button:
     for key, val in print_dict.items():
         with st.expander(key):
             st.write(val)
-#    st.write(list(set(full_legal_list)))
+    try:
+        with st.expander('Originaltext'):
+            st.write(print_list)
+    except:
+        pass
 else:
     st.write('Wähle ein Konzept')

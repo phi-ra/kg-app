@@ -9,6 +9,9 @@ st.set_page_config(
 )
 
 st.write("# Knowledge Graph")
+st.write("Der Knowledge Graph beinhaltet alle extrahierten Konzepte und deren Verbindungen")
+st.write("Für jeden Use-Case kann über das site-map die Suche verfeinert werden")
+
 
 st.sidebar.success("Wähle einen Explorer aus")
 

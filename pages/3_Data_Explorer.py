@@ -2,11 +2,13 @@ import streamlit as st
 import difflib
 import networkx as nx
 
-from src.loading.load_prepared import load_full_graph, load_namelist, load_legaldict, load_nodes_rich, load_data_nodes, load_full_data_graph
+from src.loading.load_prepared import load_full_graph, load_namelist, load_legaldict
+from src.loading.load_prepared import load_nodes_rich, load_data_nodes, load_full_data_graph
 from src.subgraph.calculate import calculate_subgraph
 
 st.title('Data Explorer')
-st.write('Suche Daten welche zu einem Konzept passen')
+st.write('Hier können über grobe Konzepte, Kolonnen im verschiedensten Datenquellen gesucht werden')
+st.write('Wähle dafür ein Suchwort aus')
 
 search_keyword = st.text_input("Suchwort",
                                 "unfall")

@@ -6,6 +6,10 @@ from src.loading.load_prepared import load_legal_lookup,load_legaldict
 from src.search.legalsearch import isolate_related_concepts
 from src.subgraph.calculate import calculate_subgraph
 
+st.write('# Gesetzliche Abhängigkeiten')
+st.write('Durch ein Konzept können gesetzliche Abhängigkeiten modelliert werden')
+st.write('Durch den Dropdown werden ebenfalls indirekte Abhängigkeiten durch FedLex angezeigt')
+
 search_keyword = st.text_input("Suchwort",
                                 "unfalldaten")
 st.write('Konzepte im Graph:')

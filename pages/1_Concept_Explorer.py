@@ -5,15 +5,21 @@ from pyvis.network import Network
 from src.subgraph.calculate import calculate_subgraph
 from src.loading.load_prepared import load_full_graph
 
-st.sidebar.title('Choose a subgraph')
-option=st.sidebar.selectbox('Select Subgraph',('unfall',
-                                               'nationalstrassennetz'
-                                               'else'))
+st.write('# Konzept Explorer')
+st.write('Der Konzept-Explorer ermöglicht es thematisch verwandte Themenfelder zu finden')
+
+st.sidebar.title('Wähle ein Themenbereich')
+option=st.sidebar.selectbox('Themenbereich',('unfall',
+                                             'nationalstrassennetz',
+                                             'else'))
+rad_option=st.sidebar.selectbox('Maximaler Radius',(2,
+                                                3,
+                                                4))
 
 full_graph = load_full_graph()
-new_subgraph = calculate_subgraph(full_graph,
-                                  option)
-
+new_subgraph = calculate_subgraph(graph=full_graph,
+                                  node=option, 
+                                  radius=rad_option)
 net = Network(
     notebook=False,
     cdn_resources="remote",

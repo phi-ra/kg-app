@@ -13,13 +13,25 @@ option=st.sidebar.selectbox('Themenbereich',('unfall',
                                              'nationalstrassennetz',
                                              'else'))
 rad_option=st.sidebar.selectbox('Maximaler Radius',(2,
-                                                3,
-                                                4))
+                                                    3,
+                                                    4))
 
 full_graph = load_full_graph()
 new_subgraph = calculate_subgraph(graph=full_graph,
                                   node=option, 
                                   radius=rad_option)
+
+for node in new_subgraph.nodes:
+    if node == option:
+        new_subgraph.nodes[node]['color'] = '#FF0000'
+    else:
+        new_subgraph.nodes[node]['color'] = '#ADD8E6'
+
+# for index, row in colors.iterrows():
+#     G.nodes[row['node']]['group'] = row['group']
+#     G.nodes[row['node']]['color'] = row['color']
+#     G.nodes[row['node']]['size'] = G.degree[row['node']]
+
 net = Network(
     notebook=False,
     cdn_resources="remote",
